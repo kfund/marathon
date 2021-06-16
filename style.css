@@ -1,0 +1,223 @@
+body {
+    background-color: rgb(241, 244, 247);
+}
+
+.logo {
+    width: 250px; 
+    height: 55px; 
+}
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.page-content {
+    height: 70vh;
+}
+.navs-custom, .tab-custom {
+    margin-top: 30px;
+}
+.tab-custom {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+.tab-item {
+    width: 70px;
+    height: 70px;
+    background-color: white !important;
+    margin-bottom: 2px;
+}
+.tab-content .tab-pane:nth-child(2) {
+    height: 100%;
+}
+.tab-content .tab-pane:nth-child(2) .tab-pane {
+    height: 100%;
+}
+.tab-content-inner {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+.tab-content-inner .tab-content {
+    height: 95%;
+}
+.faq-heading {
+    margin-top: 30px;
+}
+.accordion-area {
+    margin-top: 30px;
+}
+button.active {
+    background-color: #0378B4 !important;
+    color: white !important;
+}
+.mb-4 {
+    margin-bottom: 0px !important;
+}
+.my-md-5 {
+    margin-bottom: 0px !important;
+}
+.modal {
+    display: block;
+    background-color: rgba(187, 190, 192, 0.5);
+}
+.top {
+    margin-top: 20px;
+}
+.img-show {
+    width: 100%;
+    height: 270px;
+}
+.bd-callout-warning {
+    border-left-color: #f0ad4e !important;
+}
+.bd-callout {
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #e9ecef;
+    border-left-width: .25rem;
+    border-radius: .25rem;
+}
+.difficulty-line[_ngcontent-emw-c139] {
+    display: inline-grid;
+    grid-template-columns: 23px 23px 23px;
+    grid-template-rows: 6px;
+    grid-column-gap: 2px;
+}
+.difficulty-line.low[_ngcontent-emw-c139] .difficulty-line__item[_ngcontent-emw-c139]:first-child, .difficulty-line.medium[_ngcontent-emw-c139] .difficulty-line__item[_ngcontent-emw-c139]:first-child {
+    background-color: #54d226;
+}
+.difficulty-line.medium[_ngcontent-emw-c139] .difficulty-line__item[_ngcontent-emw-c139]:nth-child(2) {
+    background-color: #fed530;
+}
+.difficulty-line__item[_ngcontent-emw-c139] {
+    border-radius: 6px;
+    background-color: rgba(187, 190, 192, 0.5);
+}
+.download-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.list-group-custom {
+    height: 100%;
+}
+.list-group-header {
+    height: 10%;
+}
+.list-group-nav {
+    height: 80%;
+}
+.list-group-footer {
+    height: 10%;
+}
+.list-group-custom .row {
+    margin: 0;
+    display: flex !important;
+}
+.time-line {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.progress-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;   
+}
+.progress-custom {
+    width: 90%;
+    height: 45px !important;
+    margin-bottom: 3px;
+}
+.progress-custom span {
+    font-size: 16px;
+    width: 70px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.progress-custom img {
+    width: 45px;
+    height: 45px;
+    margin: 0 10px !important;
+}
+.inner-greating {
+    width: 75%;
+    height: 90%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.chat-widget {
+    display: none;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    background-color: #0378B4;
+    font-size: 40px;
+}
+.mobile-massage {
+    margin-bottom: 30px;
+    display: none;
+}
+.chat-widget:hover {
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.img-danger {
+    border: 3px solid rgb(221, 40, 16);
+    border-radius: 50%;
+}
+.card-bar {
+    display: flex !important;
+    flex-direction: row !important;
+    width: 800px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2px;
+}
+.card-task-item {
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgba(187, 190, 192, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-success {
+    border: 3px solid #5cb85c;
+    border-radius: 50%;
+}
+.img-wrong {
+    border: 3px solid #f0ad4e;
+    border-radius: 50%;
+}
+
+
+@media screen and (max-width: 992px) {
+    body {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 !important;
+    }
+    .container {
+        display: none;
+    }
+    .chat-widget {
+        display: flex;
+    }
+    .mobile-massage {
+        display: block;
+    }
+}
