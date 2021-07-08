@@ -5,8 +5,6 @@ function sortRows() {
       switching = false;
       rows = document.querySelectorAll('.progress-bar__cover')
 
-      console.log(rows)
-
       for (i = 0; i < (rows.length - 1); i++) {
         shouldSwitch = false;
         x = rows[i].querySelector('.progress-bar').getAttribute("aria-valuenow");
@@ -19,7 +17,6 @@ function sortRows() {
       if (shouldSwitch) {
         rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
         switching = true;
-        console.log(x, y)
       }
     }
   }
