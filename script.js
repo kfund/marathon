@@ -26,8 +26,8 @@ function checkScreenWidth () {
   const pageContent = document.querySelector('.page-content')
   const customNavs = document.querySelector('.navs-custom')
 
-  const timeLine = document.querySelector('.time-line')
-  const markLine = document.querySelector('.mark-line')
+  const timeLine = document.querySelectorAll('.date-expiring')
+  const markLine = document.querySelectorAll('.mark-line')
 
   if (window.screen.width < 993) {
     pageContent.classList.remove('align-items-start')
@@ -35,8 +35,15 @@ function checkScreenWidth () {
 
     customNavs.classList.remove('flex-column')
 
-    timeLine.classList.remove('col-8')
-    markLine.classList.remove('col-2')
+    for (const line of timeLine) {
+      line.classList.remove('col-8')
+      line.classList.add('col-7')
+    }
+
+    for (const line of markLine) {
+      line.classList.remove('col-2')
+      line.classList.add('col-5')
+    }
   }
 }
 
