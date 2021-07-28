@@ -21,4 +21,24 @@ function sortRows() {
     }
   }
 
+function checkScreenWidth () {
+
+  const pageContent = document.querySelector('.page-content')
+  const customNavs = document.querySelector('.navs-custom')
+
+  const timeLine = document.querySelector('.time-line')
+  const markLine = document.querySelector('.mark-line')
+
+  if (window.screen.width < 993) {
+    pageContent.classList.remove('align-items-start')
+    pageContent.classList.add('align-items-center', 'flex-column')
+
+    customNavs.classList.remove('flex-column')
+
+    timeLine.classList.remove('col-8')
+    markLine.classList.remove('col-2')
+  }
+}
+
+checkScreenWidth()
 sortRows()

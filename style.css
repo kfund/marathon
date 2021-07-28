@@ -108,16 +108,16 @@ button.active {
     height: 10%;
 }
 .list-group-nav {
-    height: 80%;
+    height: 78%;
 }
 .list-group-footer {
-    height: 10%;
+    height: 12%;
 }
 .list-group-custom .row {
     margin: 0;
     display: flex !important;
 }
-.time-line {
+.time-line, .mark-line {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -209,22 +209,11 @@ button.active {
 
 
 @media screen and (max-width: 992px) {
-    body {
-        width: 100%;
-        height: 90vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0 !important;
-    }
-    .container {
+    .difficulty {
         display: none;
     }
-    .chat-widget {
-        display: flex;
-    }
-    .mobile-massage {
-        display: block;
+
+    .card-bar {
+        width: 350px;
     }
 }
